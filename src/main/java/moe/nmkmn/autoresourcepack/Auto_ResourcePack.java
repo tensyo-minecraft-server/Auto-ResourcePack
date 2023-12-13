@@ -46,8 +46,6 @@ public final class Auto_ResourcePack extends JavaPlugin implements Listener {
             Gson gson = new Gson();
             Release release = gson.fromJson(json, Release.class);
 
-            getLogger().info(release.toString());
-
             Player player = event.getPlayer();
 
             if (Objects.equals(release.assets.get(0).name, configuration.getString("file"))) {
