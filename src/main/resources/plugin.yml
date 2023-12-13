@@ -1,0 +1,4 @@
+name: Auto-ResourcePack
+version: '${version}'
+main: moe.nmkmn.autoresourcepack.Auto_ResourcePack
+api-version: '1.20'
