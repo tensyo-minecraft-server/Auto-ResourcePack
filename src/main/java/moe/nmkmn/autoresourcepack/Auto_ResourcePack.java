@@ -1,6 +1,7 @@
 package moe.nmkmn.autoresourcepack;
 
 import com.google.gson.Gson;
+import moe.nmkmn.autoresourcepack.model.Assets;
 import moe.nmkmn.autoresourcepack.model.Release;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.entity.Player;
@@ -48,12 +49,11 @@ public final class Auto_ResourcePack extends JavaPlugin implements Listener {
 
             Player player = event.getPlayer();
 
-            if (Objects.equals(release.assets.get(0).name, configuration.getString("file"))) {
-                player.setResourcePack(release.assets.get(0).browser_download_url);
-            } else if (Objects.equals(release.assets.get(1).name, configuration.getString("file"))) {
-                player.setResourcePack(release.assets.get(0).browser_download_url);
+            for (Assets assets: release.assets) {
+                if (Objects.equals(assets.name, configuration.getString("file"))) {
+                    player.setResourcePack(assets.browser_download_url);
+                }
             }
-
         } catch (Exception e) {
             e.printStackTrace();
         }
