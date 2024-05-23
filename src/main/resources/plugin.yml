@@ -1,4 +1,4 @@
-name: Auto-ResourcePack
+name: TextureUpdater
 version: '${version}'
-main: moe.nmkmn.autoresourcepack.Auto_ResourcePack
+main: moe.nmkmn.texture_updater.TextureUpdater
 api-version: '1.20'

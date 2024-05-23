@@ -1,4 +1,4 @@
-package moe.nmkmn.autoresourcepack.model;
+package moe.nmkmn.texture_updater.model;
 
 public class Uploader {
     public String login;

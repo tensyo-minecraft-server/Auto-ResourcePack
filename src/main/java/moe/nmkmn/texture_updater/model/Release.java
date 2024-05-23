@@ -1,4 +1,4 @@
-package moe.nmkmn.autoresourcepack.model;
+package moe.nmkmn.texture_updater.model;
 
 import java.util.List;
 

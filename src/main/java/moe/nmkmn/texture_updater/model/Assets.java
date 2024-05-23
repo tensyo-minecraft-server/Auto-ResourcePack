@@ -1,4 +1,4 @@
-package moe.nmkmn.autoresourcepack.model;
+package moe.nmkmn.texture_updater.model;
 
 public class Assets {
     public String url;
@@ -14,7 +14,7 @@ public class Assets {
     public String created_at;
     public String updated_at;
 
-    public Assets(String url, String id, String node_id, String name, String label, moe.nmkmn.autoresourcepack.model.Uploader uploader, String content_type, String state, Number size, Number download_count, String created_at, String updated_at, String browser_download_url) {
+    public Assets(String url, String id, String node_id, String name, String label, moe.nmkmn.texture_updater.model.Uploader uploader, String content_type, String state, Number size, Number download_count, String created_at, String updated_at, String browser_download_url) {
         this.url = url;
         this.id = id;
         this.node_id = node_id;
