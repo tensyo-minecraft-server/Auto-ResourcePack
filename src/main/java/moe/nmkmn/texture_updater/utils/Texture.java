@@ -34,13 +34,13 @@ public class Texture {
 
     public void getLatest(Consumer<String> callback) {
         Request request = new Request.Builder()
-                .url("https://api.github.com/repos/tensyo-minecraft-server/ResourcePacks/releases/latest")
+                .url(Objects.requireNonNull(plugin.getConfig().getString("url")))
                 .build();
 
         client.newCall(request).enqueue(new Callback() {
             @Override
             public void onFailure(@NotNull Call call, @NotNull IOException e) {
-                plugin.getLogger().info(e.getMessage());
+                plugin.getLogger().severe(e.getMessage());
             }
 
             @Override
